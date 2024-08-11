@@ -1,0 +1,10 @@
+.social-icon {
+    margin-left: 20px;
+    color: grey;
+    transition: color 0.3s ease
+}
+
+.social-icon:hover {
+    color: #1A73E8;
+    cursor: pointer;
+}

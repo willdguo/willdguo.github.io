@@ -17,7 +17,7 @@ const Puzzles = () => {
 
     const [puzzle_list, setPuzzle_list] = useState([])
     const [puzzle_list_filtered, setPuzzle_list_filtered] = useState([])
-    const [expanded, setExpanded] = useState(false)
+    // const [expanded, setExpanded] = useState(false)
 
     const [search, setSearch] = useState('')
     const [catFilter, setCatFilter] = useState('') // useState(["Brain Teaser", "Lateral Puzzles", "Probability", "Coding"])
@@ -27,23 +27,31 @@ const Puzzles = () => {
     // want to filter by a) difficulty, b) category
 
     useEffect(() => {
-        PuzzleService.getPuzzles()
-        .then(response => {
-            setPuzzle_list(response)
+        // PuzzleService.getPuzzles()
+        // .then(response => {
+        //     setPuzzle_list(response)
 
-            // get unique puzzle types
-            let temp = []
+        //     // get unique puzzle types
+        //     let temp = []
             
-            response.forEach(puzzle => {
-                if(!temp.includes(puzzle.puzzle_category)){
-                    // console.log("new one")
-                    temp = temp.concat(puzzle.puzzle_category)
-                }
-            })
+        //     response.forEach(puzzle => {
+        //         if(!temp.includes(puzzle.puzzle_category)){
+        //             // console.log("new one")
+        //             temp = temp.concat(puzzle.puzzle_category)
+        //         }
+        //     })
 
-            setPuzzleCats(temp)
-
+        //     setPuzzleCats(temp)
+        // })
+        const temp = PuzzleService.getPuzzles()
+        setPuzzle_list(temp)
+        let cats = []
+        temp.forEach(puzzle => {
+            if(!cats.includes(puzzle.puzzle_category)) {
+                cats = cats.concat(puzzle.puzzle_category)
+            }
         })
+        setPuzzleCats(cats)
     }, [])
 
     // filter for search
@@ -166,9 +174,9 @@ const Puzzles = () => {
                     </tbody>
                 </Table>
 
-                <Button onClick = {() => setExpanded(!expanded)} variant = "secondary">
+                {/* <Button onClick = {() => setExpanded(!expanded)} variant = "secondary">
                     {expanded ? 'Collapse Table' : 'Expand Table'}
-                </Button>
+                </Button> */}
 
             <AddPuzzle puzzle_list = {puzzle_list} setPuzzle_list={setPuzzle_list} />
         </div>
