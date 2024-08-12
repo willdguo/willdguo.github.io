@@ -1,5 +1,6 @@
 import ProjectCard from "../components/ProjectCard"
 import cowork from "../images/cowork.png"
+import speedmath from "../images/speedmath.png"
 
 function Projects() {
 
@@ -30,14 +31,14 @@ function Projects() {
     },
     {
         "title": "Speedmath",
-        //"img": speedmath,
-        "desc": "Timed arithmetic game inspired by zetamac. Stores past games & allows users to see time spent per question. Data viz using D3 recharts",
+        "img": speedmath,
+        "desc": "Timed arithmetic game inspired by zetamac. Stores past games & allows users to see time spent per question. Data viz using D3 recharts.",
         "date": "May 2023",
     }
    ]
 
     return (
-        <div>
+        <div style={{display:"flex"}}>
             {projects.map((project, idx) => (
                 <ProjectCard 
                     title={project.title} 

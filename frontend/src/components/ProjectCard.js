@@ -8,21 +8,15 @@ function ProjectCard( {title, img, desc, date} ) {
         "margin": "10px",
         "border": "1px solid #000",
         "borderRadius": "10px", 
-    }
-
-    const imgStyle = {
-        "width": "400px",
-        "marginRight": "20px",
-        "paddingRight": "10px",
-        "borderRight": "1px solid #ccc",
+        "width": "50%",
     }
 
     return (
         <div style = {style}>
             <div>
-                <img style={imgStyle} src={img} alt={title}/>
+                <img style={{width:"400px"}} src={img} alt={title}/>
             </div>
-            <div> 
+            <div style={{paddingLeft: "20px", borderLeft: "1px solid #ccc"}}> 
                 <h2> {title} </h2>
                 <br />
                 <p> {desc} </p>
