@@ -1,0 +1,21 @@
+.bio {
+    display: flex;
+    justify-content: center;
+    /* alignItems: 'center',
+    marginTop: '20px',
+    marginBottom: '20px', */
+    overflow: auto;
+    max-height: calc(80vh - 10px);
+    /* background-color: blue; */
+}
+
+@media (max-width: 768px) {
+    .bio {
+        display: block;
+    }
+
+    .profpic {
+        display: flex;
+        justify-content: center;
+    }
+}

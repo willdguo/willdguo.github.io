@@ -27,7 +27,7 @@ function Projects() {
     {
         "title": "OHQ",
         "img": ohq,
-        "desc": "Penn Labs' office hours software used by professors, TAs, and students across campus. Built with TypeScript/Semantic UI, Django,",
+        "desc": "Penn Labs' office hours management platform used by 10,000+ professors, TAs, and students across campus.",
         "link": "https://ohq.io",
         "date": "Present",
         "id": "2",

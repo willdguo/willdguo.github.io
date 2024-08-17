@@ -1,3 +1,4 @@
+import './Bio.css'
 import profpic from '../images/willguo6.png'
 
 function Bio() {
@@ -9,19 +10,9 @@ function Bio() {
       }
     
     return (
-        <div 
-          style={{
-            display: 'flex', 
-            justifyContent: 'center',
-            // alignItems: 'center',
-            // marginTop: '20px',
-            // marginBottom: '20px',
-            // overflow: "auto",
-            // height: "calc(80vh - 10px)",
-            }}
-          >
+        <div className='bio'>
     
-          <div>
+          <div className='profpic'>
             <img src={profpic} style={{maxWidth: '300px'}} alt="Profile"/>
           </div>
     

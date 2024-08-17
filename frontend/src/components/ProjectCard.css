@@ -5,6 +5,8 @@
     border: 1px solid #eee;
     border-radius: 10px;
     width: calc(50% - 20px);
+    max-height: 320px;
+    /* width: 598px; */
     text-decoration: none;
     color: #333;
     transition: box-shadow 0.2s ease, transform 0.3s ease, color 0.1s ease,
@@ -14,4 +16,25 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
     color: #000;
+}
+
+.project-image {
+    width: 100%;
+    align-content: center;
+    /* border: 5px solid black; */
+}
+
+.project-desc {
+    width: 100%;
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+    overflow: auto;
+}
+
+@media (max-width: 1000px) {
+    .project-card {
+        display: block;
+        width: 100%;
+        max-height: none;
+    }
 }
