@@ -1,26 +1,17 @@
-
+import './ProjectCard.css'
 
 function ProjectCard( {title, img, desc, date} ) {
 
-    const style = {
-        "display": "flex",
-        "padding": "10px",
-        "margin": "10px",
-        "border": "1px solid #000",
-        "borderRadius": "10px", 
-        "width": "50%",
-    }
-
     return (
-        <div style = {style}>
+        <div className="project-card">
             <div>
-                <img style={{width:"400px"}} src={img} alt={title}/>
+                <img style={{width:"400px", marginRight: "5px"}} src={img} alt={title}/>
             </div>
-            <div style={{paddingLeft: "20px", borderLeft: "1px solid #ccc"}}> 
-                <h2> {title} </h2>
+            <div style={{paddingLeft: "20px", borderLeft: "1px solid #eee"}}> 
+                <p style={{fontSize:'20px', fontWeight:'bold'}}> {title} </p>
                 <br />
                 <p> {desc} </p>
-                <p> {date} </p>
+                <p style={{color: "#888"}}> {date} </p>
             </div>
         </div>
     )
