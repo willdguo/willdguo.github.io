@@ -58,7 +58,7 @@ const NavBar = () => {
           <Nav.Link href = "/research"> Research </Nav.Link>
           <Nav.Link href = "/projects"> Projects </Nav.Link>
           <Nav.Link href = "/blog"> Blog </Nav.Link>
-          <Nav.Link href = "/puzzles"> Puzzles </Nav.Link>
+          {/* <Nav.Link href = "/puzzles"> Puzzles </Nav.Link> */}
         </Nav>
       </Container>
     </Navbar>
