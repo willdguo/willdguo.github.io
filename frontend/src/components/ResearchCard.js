@@ -8,7 +8,7 @@ function ResearchCard({title, desc, date, links}) {
 
     return (
         <div style={style}>
-            <h4> {title} </h4>
+            <h4 style={{fontSize: '20px'}}> {title} </h4>
             <p> {desc} </p>
             <p style={{color: "#888"}}> {date} </p>
         </div>

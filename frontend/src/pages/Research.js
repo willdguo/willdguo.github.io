@@ -24,7 +24,7 @@ function Research () {
 
     return (
         <div style={{padding: '10px', marginLeft: '40px'}}>
-            <h1> Research </h1>
+            <h3 style={{fontWeight:'400'}}> Research </h3>
             <div style={{paddingTop: '20px'}}>
                 {topics.map((topic, idx) => (
                     <ResearchCard key={idx} title={topic.title} desc={topic.desc} date={topic.date}/>
