@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import Puzzles from "./components/Puzzles"
 import PageNotFound from "./components/PageNotFound"
-import { Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Link, Route, Navigate } from "react-router-dom"
 import Research from './pages/Research'
 import Projects from './pages/Projects'
 import Blog from './pages/Blog'
@@ -52,12 +52,12 @@ const NavBar = () => {
   return (
     <Navbar bg = "light" data-bs-theme = "light" >
       <Container>
-        <Navbar.Brand href = "/home"> William Guo </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/home"> William Guo </Navbar.Brand>
         <Nav>
-          <Nav.Link href = "/home"> Home </Nav.Link>
-          <Nav.Link href = "/research"> Research </Nav.Link>
-          <Nav.Link href = "/projects"> Projects </Nav.Link>
-          <Nav.Link href = "/blog"> Blog </Nav.Link>
+          <Nav.Link as={Link} to = "/home"> Home </Nav.Link>
+          <Nav.Link as={Link} to = "/research"> Research </Nav.Link>
+          <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link>
+          <Nav.Link as={Link} to = "/blog"> Blog </Nav.Link>
           {/* <Nav.Link href = "/puzzles"> Puzzles </Nav.Link> */}
         </Nav>
       </Container>
