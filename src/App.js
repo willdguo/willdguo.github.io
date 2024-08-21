@@ -50,10 +50,10 @@ function App() {
 const NavBar = () => {
 
   return (
-    <Navbar bg = "light" data-bs-theme = "light" >
+    <Navbar className='navbar' bg = "light" data-bs-theme = "light" >
       <Container>
-        <Navbar.Brand as={Link} to="/home"> William Guo </Navbar.Brand>
-        <Nav>
+        <Navbar.Brand className='navbarbrand' as={Link} to="/home"> William Guo </Navbar.Brand>
+        <Nav className='navbarnav'>
           <Nav.Link as={Link} to = "/home"> Home </Nav.Link>
           <Nav.Link as={Link} to = "/research"> Research </Nav.Link>
           <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link>

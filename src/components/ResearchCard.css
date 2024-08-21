@@ -1,0 +1,16 @@
+.researchcard {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.researchcard a {
+    margin-right: 10px;
+    color: #88f;
+    transition: color 0.1s ease;
+    text-decoration: none;
+}
+
+.researchcard a:hover {
+    color: #55f
+}
