@@ -2,6 +2,7 @@ import ProjectCard from "../components/ProjectCard"
 import cowork from "../images/cowork.png"
 import speedmath from "../images/speedmath.png"
 import ohq from "../images/ohq.png"
+import cresearch from "../images/contraryresearch.png"
 
 function Projects() {
 
@@ -27,7 +28,7 @@ function Projects() {
     {
         "title": "OHQ",
         "img": ohq,
-        "desc": "Penn Labs' office hours management platform used by 10,000+ professors, TAs, and students across campus.",
+        "desc": "Penn Labs' office hours management platform used by 10,000+ professors, TAs, and undergrad/graduate students across campus.",
         "link": "https://ohq.io",
         "date": "Present",
         "id": "2",
@@ -47,6 +48,14 @@ function Projects() {
         "link": "https://speedmath-woad.vercel.app",
         "date": "May 2023",
         "id": "1",
+    },
+    {
+        "title": "Startup Newsletter",
+        "img": cresearch,
+        "desc": "Conducted in-depth market research on interesting startups & technologies (i.e. Anthropic, MasterClass, Postman) for Contrary.",
+        "link": "https://research.contrary.com/company?author=William+Guo",
+        "date": "Dec 2023",
+        "id": "3"
     }
    ]
 
