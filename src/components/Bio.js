@@ -29,6 +29,12 @@ function Bio() {
               I'm also fascinated by the tech startup scene, and was previously a research fellow for <a href="https://research.contrary.com/company?author=William+Guo" target="_blank" rel="noreferrer"> Contrary</a>.
               In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. 
             </p>
+
+            <br />
+            <div>
+              <p> Quick Links: </p>
+              <p><a href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes" target="_blank" rel="noreferrer"> NETS 4120 Notes</a></p>
+            </div>
           </div>
         </div>
     )

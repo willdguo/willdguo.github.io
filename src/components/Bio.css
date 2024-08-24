@@ -9,6 +9,7 @@
     /* background-color: blue; */
 }
 
+
 @media (max-width: 768px) {
     .bio {
         display: block;
