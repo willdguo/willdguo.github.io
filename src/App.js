@@ -2,7 +2,7 @@ import './App.css'
 import { Navbar, Container, Nav } from "react-bootstrap"
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import Puzzles from "./components/Puzzles"
+import Puzzles from "./pages/Puzzles"
 import PageNotFound from "./components/PageNotFound"
 import { Routes, Link, Route, Navigate } from "react-router-dom"
 import Research from './pages/Research'

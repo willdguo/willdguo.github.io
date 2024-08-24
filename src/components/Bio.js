@@ -2,12 +2,25 @@ import './Bio.css'
 import profpic from '../images/willguo6.png'
 
 function Bio() {
+    // const date = new Date();
 
     const bioStyle = {
         maxWidth: '600px',
         margin: '0',
         padding: '20px',
       }
+
+    const currWorking = (
+      <div>
+        {/* <p> As of {date.toUTCString()} I am currently working on: </p> */}
+        <p> As of 8/23, I am currently working on: </p>
+        <ul>
+          <li> Oja's Algorithm for Streaming PCA </li>
+          <li> <a href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes" target="_blank" rel="noreferrer"> NETS 4120 Notes</a> </li>
+          <li> Testing to get credit for MATH 2410 </li>
+        </ul>
+      </div>
+    )
     
     return (
         <div className='bio'>
@@ -31,10 +44,7 @@ function Bio() {
             </p>
 
             <br />
-            <div>
-              <p> Quick Links: </p>
-              <p><a href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes" target="_blank" rel="noreferrer"> NETS 4120 Notes</a></p>
-            </div>
+            {currWorking}
           </div>
         </div>
     )

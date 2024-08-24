@@ -178,10 +178,12 @@ const Puzzles = () => {
                     {expanded ? 'Collapse Table' : 'Expand Table'}
                 </Button> */}
 
-            {/* <AddPuzzle puzzle_list = {puzzle_list} setPuzzle_list={setPuzzle_list} /> */}
+            <AddPuzzle puzzle_list = {puzzle_list} setPuzzle_list={setPuzzle_list} />
         </div>
     )
 }
+
+
 // eslint-disable-next-line
 const AddPuzzle = ( {puzzle_list, setPuzzle_list} ) => {
     /* puzzleSchema = new Puzzle({
@@ -295,4 +297,5 @@ const AddPuzzle = ( {puzzle_list, setPuzzle_list} ) => {
     )
 }
 
-export default Puzzles
+
+export default Puzzles;
