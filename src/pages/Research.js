@@ -1,5 +1,5 @@
 import ResearchCard from "../components/ResearchCard";
-// import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
+import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
 import chempres from "../files/pnwavs_WG_presentation.pdf"
 
 function Research () {
@@ -16,17 +16,18 @@ function Research () {
             'desc': '',
             'date': 'Feb 2021 - Apr 2022',
             'links': [                
-                {'link': chempres, 'text': 'Presentation'},
-                // {'link': chemposter, 'text': 'Poster'},
+                {'link': chempres, 'text': '[Presentation]'},
+                {'link': chemposter, 'text': '[Poster]'},
             ],
         },
         {
             'title': '3D Collision Tracking and Analysis',
             'desc': '',
             'date': 'Sep 2020 - Mar 2022',
-            'links': [],
-            // poster: https://aapt-wm.secure-platform.com/a/solicitations/34/sessiongallery/557
-            // schedule: https://www.aapt.org/Conferences/WM2022/upload/aapt_wm22_Program-1.pdf
+            'links': [
+                {'link': 'https://doi.org/10.1119/5.0147346', 'text': '[Paper]'}
+            ],
+            // paper: https://doi.org/10.1119/5.0147346
         },
     ]
 

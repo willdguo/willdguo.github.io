@@ -9,19 +9,6 @@ function Bio() {
         margin: '0',
         padding: '20px',
       }
-
-    //eslint-disable-next-line
-    const currWorking = (
-      <div>
-        {/* <p> As of {date.toUTCString()} I am currently working on: </p> */}
-        <p> As of 8/23/24, I am currently working on: </p>
-        <ul>
-          <li> Oja's Algorithm for Streaming PCA </li>
-          <li> <a href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes" target="_blank" rel="noreferrer"> NETS 4120 Notes</a> </li>
-          <li> Testing to get credit for MATH 2410 </li>
-        </ul>
-      </div>
-    )
     
     return (
         <div className='bio'>
@@ -45,7 +32,6 @@ function Bio() {
             </p>
 
             <br />
-            {/* {currWorking} */}
           </div>
         </div>
     )
