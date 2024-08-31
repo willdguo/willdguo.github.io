@@ -1,6 +1,7 @@
 import ResearchCard from "../components/ResearchCard";
 import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
 import chempres from "../files/pnwavs_WG_presentation.pdf"
+import physpaper from "../files/3D Midair Object Collision.pdf"
 
 function Research () {
 
@@ -25,7 +26,7 @@ function Research () {
             'desc': '',
             'date': 'Sep 2020 - Mar 2022',
             'links': [
-                {'link': 'https://doi.org/10.1119/5.0147346', 'text': '[Paper]'}
+                {'link': physpaper, 'text': '[Paper]'}
             ],
             // paper: https://doi.org/10.1119/5.0147346
         },
