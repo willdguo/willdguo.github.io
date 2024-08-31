@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.2e114eea.css",
-    "main.js": "/static/js/main.d9b71c0d.js",
+    "main.js": "/static/js/main.fd381c46.js",
     "static/media/contraryresearch.png": "/static/media/contraryresearch.87a0ed54317fddd0f955.png",
     "static/media/willguo6.png": "/static/media/willguo6.a444e891ec76e13e79ab.png",
     "static/media/pnwavs_WG_presentation.pdf": "/static/media/pnwavs_WG_presentation.d880bc4ee12a8af5af77.pdf",
+    "static/media/OregonElectrochemistry_poster-2021_09_18.pdf": "/static/media/OregonElectrochemistry_poster-2021_09_18.2c5586bf20afcfae0f08.pdf",
     "static/media/ohq.png": "/static/media/ohq.ea84bc69e45a4cd3b112.png",
     "static/media/speedmath.png": "/static/media/speedmath.531d8bc7fcd5763e1a0a.png",
     "static/media/cowork.png": "/static/media/cowork.075b66beef28b0f9384c.png",
     "index.html": "/index.html",
     "main.2e114eea.css.map": "/static/css/main.2e114eea.css.map",
-    "main.d9b71c0d.js.map": "/static/js/main.d9b71c0d.js.map"
+    "main.fd381c46.js.map": "/static/js/main.fd381c46.js.map"
   },
   "entrypoints": [
     "static/css/main.2e114eea.css",
-    "static/js/main.d9b71c0d.js"
+    "static/js/main.fd381c46.js"
   ]
 }
