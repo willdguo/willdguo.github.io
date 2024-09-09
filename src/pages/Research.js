@@ -2,6 +2,7 @@ import ResearchCard from "../components/ResearchCard";
 import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
 import chempres from "../files/pnwavs_WG_presentation.pdf"
 import physpaper from "../files/3D Midair Object Collision.pdf"
+import ojasummary from "../files/Streaming_PCA_Summer_Findings (1) copy.pdf"
 
 function Research () {
 
@@ -10,7 +11,9 @@ function Research () {
             'title': "Oja's Algorithm for Streaming PCA",
             'desc': "Tightening/improving existing bounds on the spectral gap for Oja's algorithm to achieve low reconstruction error on arbitrary data matrices.",
             'date': 'Feb 2024 - Present',
-            'links': [],
+            'links': [
+                {'link': ojasummary, 'text': ' '}
+            ],
         },
         {
             'title': "Techno-Economic Comparison of Catalysts for Proton-Exchange Membrane Electrolysis",
