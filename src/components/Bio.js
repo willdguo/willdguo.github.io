@@ -26,8 +26,7 @@ function Bio() {
             </p>
             <p>
               {/* I am a teaching assistant for an intro discrete math course, and am a frontend dev for Penn Labs, where I build web apps for our student body.  */}
-              I'm a huge fan of puzzles of all kinds, namely lateral thinking puzzles and quantitative brain teasers.
-              I'm also fascinated by the tech startup scene, and was previously a research fellow for <a href="https://research.contrary.com/company?author=William+Guo" target="_blank" rel="noreferrer"> Contrary</a>.
+              I'm a huge fan of puzzles of all kinds, namely lateral thinking puzzles and quantitative brain teasers. 
               In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. 
             </p>
 
