@@ -3,16 +3,25 @@ import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
 import chempres from "../files/pnwavs_WG_presentation.pdf"
 import physpaper from "../files/3D Midair Object Collision.pdf"
 import ojasummary from "../files/Streaming_PCA_Summer_Findings (1) copy.pdf"
+import multicalibpaper from '../files/Multicalibration_Distance_CIS_6200.pdf'
 
 function Research () {
 
     const topics = [
         {
+            'title': "Simple Algorithms for Sublinear Sequential Multicalibration Distance",
+            'desc': "Constructing algorithms obtaining state of the art bounds on multicalibration distance in terms of time & the number of groups.",
+            'date': 'Oct 2024 - Present',
+            'links': [
+                {link: multicalibpaper, 'text': '[Paper]'}
+            ]
+        },
+        {
             'title': "Oja's Algorithm for Streaming PCA",
             'desc': "Tightening/improving existing bounds on the spectral gap for Oja's algorithm to achieve low reconstruction error on arbitrary data matrices.",
             'date': 'Feb 2024 - Present',
             'links': [
-                {'link': ojasummary, 'text': ' '}
+                // {'link': ojasummary, 'text': 'paper'}
             ],
         },
         {
