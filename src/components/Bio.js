@@ -20,7 +20,7 @@ function Bio() {
           <div style = {bioStyle}>
             <p>
               Hi! I'm William, a third year dual-degree bachelor's student at UPenn studying CS and Statistics. 
-              I'm interested in the design and analysis of algorithms, particularly for large datasets and graphs.
+              I'm interested in the design and analysis of algorithms, particularly for online learning and graphs.
               Currently, I am fortunate enough to work with <a href="https://sites.google.com/site/erikwaing/home?authuser=0" target="_blank" rel="noreferrer">Erik Waingarten</a> on
               space-limited streaming algorithms for principal component analysis.
             </p>

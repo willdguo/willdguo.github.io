@@ -78,7 +78,7 @@ const SocialBar = () => {
       }}
     >
       <p style={{color: '#aaa'}}>
-        willguo6 *at* wharton *dot* upenn *dot* edu
+        willguo6 *at* seas *dot* upenn *dot* edu
       </p>
       <a className="social-icon" href = "https://x.com/willdguo" target="_blank" rel="noreferrer">
         <FaXTwitter />
