@@ -10,7 +10,7 @@ function Research () {
     const topics = [
         {
             'title': "Simple Algorithms for Sublinear Sequential Multicalibration Distance",
-            'desc': "Constructing algorithms obtaining state of the art bounds on multicalibration distance in terms of time & the number of groups.",
+            'desc': "Developing algorithms obtaining low distance to multicalibration.", // markdown so latex?
             'date': 'Oct 2024 - Present',
             'links': [
                 // {link: multicalibpaper, 'text': '[Paper]'}
@@ -18,7 +18,7 @@ function Research () {
         },
         {
             'title': "Oja's Algorithm for Streaming PCA",
-            'desc': "Tightening/improving existing bounds on the spectral gap for Oja's algorithm to achieve low reconstruction error on arbitrary data matrices.",
+            'desc': "Improving existing bounds on the spectral ratio for Oja's algorithm to achieve low error on arbitrary inputs.",
             'date': 'Feb 2024 - Present',
             'links': [
                 // {'link': ojasummary, 'text': 'paper'}
