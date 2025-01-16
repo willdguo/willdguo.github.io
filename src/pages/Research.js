@@ -3,7 +3,7 @@ import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
 // import chempres from "../files/pnwavs_WG_presentation.pdf"
 import physpaper from "../files/3D Midair Object Collision.pdf"
 // import ojasummary from "../files/Streaming_PCA_Summer_Findings (1) copy.pdf"
-// import multicalibpaper from '../files/Multicalibration_Distance_CIS_6200.pdf'
+import multicalibpaper from '../files/Multicalibration_Distance_CIS_6200.pdf'
 
 function Research () {
 
@@ -13,7 +13,7 @@ function Research () {
             'desc': "Developing algorithms obtaining low distance to multicalibration.", // markdown so latex?
             'date': 'Oct 2024 - Present',
             'links': [
-                // {link: multicalibpaper, 'text': '[Paper]'}
+                {link: multicalibpaper, 'text': '[Draft]'}
             ]
         },
         {
