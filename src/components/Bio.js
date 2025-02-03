@@ -36,7 +36,9 @@ function Bio() {
             <p>
               I'm a huge fan of puzzles of all kinds, namely lateral thinking puzzles
               and quantitative brain teasers. In my free time, I enjoy pickup
-              soccer/volleyball, playing piano, and bouldering.
+              soccer/volleyball, playing piano, and bouldering. Before discovering TCS,
+              I was obsessed with the startup space, and was particularly fascinated
+              by innovative climate technologies. 
             </p>
           </div>
         </div>
