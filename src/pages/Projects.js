@@ -30,7 +30,7 @@ function Projects() {
         "img": ohq,
         "desc": "Penn Labs' office hours management platform used by 10,000+ professors, TAs, and undergrad/graduate students across campus.",
         "link": "https://ohq.io",
-        "date": "Present",
+        "date": "Jan 2024",
         "id": "2",
     },
     {

@@ -1,28 +1,28 @@
 import ResearchCard from "../components/ResearchCard";
 import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
 // import chempres from "../files/pnwavs_WG_presentation.pdf"
-import physpaper from "../files/3D Midair Object Collision.pdf"
-// import ojasummary from "../files/Streaming_PCA_Summer_Findings (1) copy.pdf"
+// import physpaper from "../files/3D Midair Object Collision.pdf"
+import streampca from "../files/Streaming_PCA_Sparse_Matrices.pdf"
 import multicalibpaper from '../files/Multicalibration_Distance_CIS_6200.pdf'
 
 function Research () {
 
     const topics = [
         {
-            'title': "Simple Algorithms for Sublinear Sequential Multicalibration Distance",
-            'desc': "Developing algorithms obtaining low distance to multicalibration.", // markdown so latex?
+            'title': "Oja's Algorithm for Streaming PCA",
+            'desc': "Tightening existing bounds on the spectral ratio for Oja's algorithm in adversarial streams.",
+            'date': 'Feb 2024 - Present',
+            'links': [
+                {'link': streampca, 'text': '[Draft]'}
+            ],
+        },
+        {
+            'title': "Sequential Algorithms for Sublinear Distance to Multicalibration",
+            'desc': "Final Project for CIS 6200: Conditional Learning, taught by Prof. Aaron Roth",
             'date': 'Oct 2024 - Present',
             'links': [
                 {link: multicalibpaper, 'text': '[Draft]'}
             ]
-        },
-        {
-            'title': "Oja's Algorithm for Streaming PCA",
-            'desc': "Improving existing bounds on the spectral ratio for Oja's algorithm to achieve low error on arbitrary inputs.",
-            'date': 'Feb 2024 - Present',
-            'links': [
-                // {'link': ojasummary, 'text': 'paper'}
-            ],
         },
         {
             'title': "Techno-Economic Comparison of Catalysts for Proton-Exchange Membrane Electrolysis",
@@ -38,7 +38,7 @@ function Research () {
             'desc': '',
             'date': 'Sep 2020 - Mar 2022',
             'links': [
-                {'link': physpaper, 'text': '[Paper]'}
+                {'link': 'https://doi.org/10.1119/5.0147346', 'text': '[Paper]'}
             ],
             // paper: https://doi.org/10.1119/5.0147346
         },
