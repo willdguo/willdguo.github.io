@@ -23,7 +23,7 @@ function Bio() {
               Hi! I'm William, a third-year dual-degree bachelor's student at UPenn
               studying CS and Statistics. I'm broadly interested in the design and analysis of
               algorithms. Some topics I am particularly interested in are sublinear algorithms, 
-              combinatorial optimization, and online learning. Currently, I am fortunate enough to work with{" "}
+              combinatorial optimization, and streaming algorithms. Currently, I am fortunate enough to work with{" "}
               <a
                 href="https://sites.google.com/site/erikwaing/home?authuser=0"
                 target="_blank"
@@ -31,11 +31,12 @@ function Bio() {
               >
                 Erik Waingarten
               </a>{" "}
-              on space-limited streaming algorithms for principal component analysis.
+              on online algorithms for large datasets.
             </p>
             <p>
-              I'm a huge fan of puzzles of all kinds, namely lateral thinking puzzles
-              and quantitative brain teasers. In my free time, I enjoy pickup
+              {/* I'm a huge fan of puzzles of all kinds, namely lateral thinking puzzles
+              and quantitative brain teasers.  */}
+              In my free time, I enjoy pickup
               soccer/volleyball, playing piano, and bouldering. Before discovering TCS,
               I was obsessed with the startup space, and was particularly fascinated
               by innovative climate technologies. 
@@ -53,7 +54,7 @@ function Bio() {
             </ul>
           </div>
 
-          <div className="course-notes">
+          {/* <div className="course-notes">
             <h4>Notes</h4>
             <a 
               href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes"
@@ -62,7 +63,7 @@ function Bio() {
             >
               NETS 4120: Algorithmic Game Theory
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     )

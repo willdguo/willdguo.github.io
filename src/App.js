@@ -7,7 +7,7 @@ import PageNotFound from "./components/PageNotFound"
 import { Routes, Link, Route, Navigate } from "react-router-dom"
 import Research from './pages/Research'
 import Projects from './pages/Projects'
-import Blog from './pages/Blog'
+// import Blog from './pages/Blog'
 import Bio from './components/Bio'
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
           {/* <Route path = "/rants" element = {<Rants />} /> */}
           <Route path = "/research" element = {<Research />} />
           <Route path = "/projects" element = {<Projects />} />
-          <Route path = "/blog" element = {<Blog />} />
+          {/* <Route path = "/blog" element = {<Blog />} /> */}
           <Route path = "/*" element = {<Navigate replace to = "/404"/>} />
           <Route path = "/404" element = {<PageNotFound />} />
         </Routes>
@@ -57,7 +57,7 @@ const NavBar = () => {
           <Nav.Link as={Link} to = "/home"> Home </Nav.Link>
           <Nav.Link as={Link} to = "/research"> Research </Nav.Link>
           <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link>
-          <Nav.Link as={Link} to = "/blog"> Blog </Nav.Link>
+          {/* <Nav.Link as={Link} to = "/blog"> Blog </Nav.Link> */}
           {/* <Nav.Link href = "/puzzles"> Puzzles </Nav.Link> */}
         </Nav>
       </Container>
