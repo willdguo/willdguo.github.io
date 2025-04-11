@@ -11,7 +11,8 @@ function Research () {
         {
             'title': "Oja's Algorithm for Streaming PCA",
             'desc': "Tightening existing bounds on the spectral ratio for Oja's algorithm in adversarial streams.",
-            'date': 'Feb 2024 - Present',
+            'authors': "William Guo, Erik Waingarten",
+            'date': 'In Progress',
             'links': [
                 {'link': streampca, 'text': '[Draft]'}
             ],
@@ -19,7 +20,8 @@ function Research () {
         {
             'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
             'desc': "Final Project for CIS 6200: Conditional Learning, taught by Prof. Aaron Roth",
-            'date': 'Oct 2024 - Dec 2024',
+            'date': 'Dec 2024',
+            'authors': "William Guo, Max Rubin-Toles",
             'links': [
                 {link: multicalibpaper, 'text': '[PDF]'}
             ]
@@ -27,20 +29,20 @@ function Research () {
         {
             'title': "Techno-Economic Comparison of Catalysts for Proton-Exchange Membrane Electrolysis",
             'desc': '',
-            'date': 'Feb 2021 - Apr 2022',
+            'authors': "William Guo, Zhenxing Feng",
+            'date': 'Apr 2022',
             'links': [                
-                // {'link': chempres, 'text': '[Presentation]'},
                 {'link': chemposter, 'text': '[Poster]'},
             ],
         },
         {
             'title': '3D Collision Tracking and Analysis',
             'desc': '',
-            'date': 'Sep 2020 - Mar 2022',
+            'authors': "Lori Shaaban, Justin Dunlap, Ralf Widenhorn, William Guo",
+            'date': 'Mar 2022',
             'links': [
                 {'link': 'https://doi.org/10.1119/5.0147346', 'text': '[Paper]'}
             ],
-            // paper: https://doi.org/10.1119/5.0147346
         },
     ]
 
@@ -54,6 +56,7 @@ function Research () {
                         title={topic.title} 
                         desc={topic.desc} 
                         date={topic.date}
+                        authors={topic.authors}
                         links={topic.links}
                     />
                 ))}
