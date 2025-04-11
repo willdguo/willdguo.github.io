@@ -3,7 +3,7 @@ import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
 // import chempres from "../files/pnwavs_WG_presentation.pdf"
 // import physpaper from "../files/3D Midair Object Collision.pdf"
 import streampca from "../files/Streaming_PCA.pdf"
-import multicalibpaper from '../files/Multicalibration_Distance_CIS_6200.pdf'
+import multicalibpaper from '../files/Multicalib_CIS6200.pdf'
 
 function Research () {
 
@@ -17,7 +17,7 @@ function Research () {
             ],
         },
         {
-            'title': "Sequential Algorithms for Sublinear Distance to Multicalibration",
+            'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
             'desc': "Final Project for CIS 6200: Conditional Learning, taught by Prof. Aaron Roth",
             'date': 'Oct 2024 - Dec 2024',
             'links': [
