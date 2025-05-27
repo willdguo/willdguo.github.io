@@ -15,3 +15,8 @@
 .researchcard a:hover {
     color: #55f
 }
+
+.researchcard p {
+    margin: 0;
+    padding-bottom: 5px;
+}

@@ -1,48 +1,36 @@
 import ResearchCard from "../components/ResearchCard";
-import chemposter from "../files/OregonElectrochemistry_poster-2021_09_18.pdf"
-// import chempres from "../files/pnwavs_WG_presentation.pdf"
-// import physpaper from "../files/3D Midair Object Collision.pdf"
 import streampca from "../files/Streaming_PCA.pdf"
 import multicalibpaper from '../files/Multicalib_CIS6200.pdf'
+import stat9310 from "../files/STAT_9310_Project.pdf"
+import pcaposter from "../files/WALDO_Poster.pdf"
 
 function Research () {
 
     const topics = [
         {
-            'title': "Oja's Algorithm for Streaming PCA",
-            'desc': "Tightening existing bounds on the spectral ratio for Oja's algorithm in adversarial streams.",
+            'title': "Oja’s Algorithm for Streaming PCA: Spectral Guarantees for Sparse Matrices",
             'authors': "William Guo, Erik Waingarten",
-            'date': 'In Progress',
+            'desc': 'Workshop on Algorithms for Large Data (Online) 2025',
             'links': [
-                {'link': streampca, 'text': '[Draft]'}
+                {'link': streampca, 'text': '[PDF]'},
+                {'link': pcaposter, 'text': '[Poster]'}
             ],
         },
         {
+            'title': "Online Regret Minimization via Rademacher Complexities",
+            'desc': "Final project for STAT 9310: Stochastic Processes",
+            'authors': "William Guo",
+            'links': [
+                {link: stat9310, 'text': '[PDF]'}
+            ]
+        },
+        {
             'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
-            'desc': "Final Project for CIS 6200: Conditional Learning, taught by Prof. Aaron Roth",
-            'date': 'Dec 2024',
+            'desc': "Final project for CIS 6200: Conditional Learning",
             'authors': "William Guo, Max Rubin-Toles",
             'links': [
                 {link: multicalibpaper, 'text': '[PDF]'}
             ]
-        },
-        {
-            'title': "Techno-Economic Comparison of Catalysts for Proton-Exchange Membrane Electrolysis",
-            'desc': '',
-            'authors': "William Guo, Zhenxing Feng",
-            'date': 'Apr 2022',
-            'links': [                
-                {'link': chemposter, 'text': '[Poster]'},
-            ],
-        },
-        {
-            'title': '3D Collision Tracking and Analysis',
-            'desc': '',
-            'authors': "Lori Shaaban, Justin Dunlap, Ralf Widenhorn, William Guo",
-            'date': 'Mar 2022',
-            'links': [
-                {'link': 'https://doi.org/10.1119/5.0147346', 'text': '[Paper]'}
-            ],
         },
     ]
 
@@ -55,7 +43,6 @@ function Research () {
                         key={idx} 
                         title={topic.title} 
                         desc={topic.desc} 
-                        date={topic.date}
                         authors={topic.authors}
                         links={topic.links}
                     />
