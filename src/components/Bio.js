@@ -20,10 +20,10 @@ function Bio() {
           <div className="bio-text">
             <h4>About Me</h4>
             <p>
-              Hi! I'm William, a third-year dual-degree bachelor's student at UPenn
+              Hi! I'm William, a rising fourth year dual-degree bachelor's student at UPenn
               studying CS and Statistics. I'm broadly interested in the design and analysis of
               algorithms. Some topics I am particularly interested in are sublinear algorithms, 
-              combinatorial optimization, and streaming algorithms. Currently, I am fortunate enough to work with{" "}
+              combinatorial optimization, and streaming algorithms. I am fortunate enough to work with{" "}
               <a
                 href="https://sites.google.com/site/erikwaing/home?authuser=0"
                 target="_blank"
