@@ -12,7 +12,7 @@ function Research () {
             'authors': "William Guo, Erik Waingarten",
             'desc': 'Workshop on Algorithms for Large Data (Online) 2025',
             'links': [
-                {'link': streampca, 'text': '[Draft]'},
+                // {'link': streampca, 'text': '[Draft]'},
                 {'link': pcaposter, 'text': '[Poster]'}
             ],
         },

@@ -80,9 +80,9 @@ const SocialBar = () => {
       <p style={{color: '#aaa'}}>
         willguo6 *at* seas *dot* upenn *dot* edu
       </p>
-      <a className="social-icon" href = "https://x.com/willdguo" target="_blank" rel="noreferrer">
+      {/* <a className="social-icon" href = "https://x.com/willdguo" target="_blank" rel="noreferrer">
         <FaXTwitter />
-      </a>
+      </a> */}
       <a className="social-icon" href="https://github.com/willdguo" target="_blank" rel="noreferrer">
         <FaGithub/>
       </a>
