@@ -20,7 +20,7 @@ function Bio() {
           <div className="bio-text">
             <h4>About Me</h4>
             <p>
-              Hi! I'm William, a rising fourth year dual-degree bachelor's student at UPenn studying CS and Statistics. I'm broadly interested in discrete probability and its applications in theoretical computer science. Some topics I am particularly interested in are processes on random graphs, high dimensional geometry, and streaming algorithms. 
+              Hi! I'm William, a rising fourth year dual-degree bachelor's student at UPenn studying CS and Statistics. I'm broadly interested in discrete probability and its applications in theoretical computer science. Some topics I am particularly interested in are combinatorial algorithms, processes on graphs, and streaming algorithms. 
             </p>
             <p>  
               I am fortunate enough to work with{" "}
@@ -52,7 +52,7 @@ function Bio() {
           <div className="teaching-experience">
             <h4>Teaching Experience</h4>
             <ul>
-              <li> ESE 5300: Elements of Probability Theory (Incoming, Fall 2025)</li>
+              <li> ESE 5300: Elements of Probability Theory (Fall 2025)</li>
               <li> CIS 3200: Introduction to Algorithms, Head of Homework Committee (Spring 2025)</li>
               <li> CIS 1600: Discrete Math, Head of Homework Committee (Fall 2024, Spring 2024)</li>
             </ul>
