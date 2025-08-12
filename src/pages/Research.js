@@ -3,16 +3,25 @@ import streampca from "../files/Streaming_PCA.pdf"
 import multicalibpaper from '../files/Multicalib_CIS6200.pdf'
 import stat9310 from "../files/STAT_9310_Project.pdf"
 import pcaposter from "../files/WALDO_Poster.pdf"
+import dimacs from "../files/DIMACS_slides.pdf"
 
 function Research () {
 
     const topics = [
         {
-            'title': "Oja’s Algorithm for Streaming PCA: Spectral Guarantees for Sparse Matrices",
+            'title': "Truth Learning in Social Networks Under Random Decision Orderings",
+            'authors': "William Guo, Edward Xiong, Jie Gao",
+            'desc': 'DIMACS REU 2025. In progress',
+            'links': [
+                {'link': dimacs, 'text': '[Presentation]'},
+            ],
+        },
+        {
+            'title': "Oja’s Algorithm for Streaming PCA: Tight Guarantees for Sparse Matrices",
             'authors': "William Guo, Erik Waingarten",
             'desc': 'Workshop on Algorithms for Large Data (Online) 2025',
             'links': [
-                // {'link': streampca, 'text': '[Draft]'},
+                {'link': streampca, 'text': '[PDF]'},
                 {'link': pcaposter, 'text': '[Poster]'}
             ],
         },

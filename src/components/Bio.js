@@ -20,7 +20,7 @@ function Bio() {
           <div className="bio-text">
             <h4>About Me</h4>
             <p>
-              Hi! I'm William, a rising fourth year dual-degree bachelor's student at UPenn studying CS and Statistics. I'm broadly interested in discrete probability and its applications in theoretical computer science. Some topics I am particularly interested in are combinatorial algorithms, processes on graphs, and streaming algorithms. 
+              Hi! I'm William, a rising fourth year dual-degree bachelor's student at UPenn studying CS and Statistics. I'm broadly interested in discrete probability and its uses in theoretical computer science. Some topics I am particularly interested in are combinatorial optimization, processes on networks, and streaming algorithms. 
             </p>
             <p>  
               I am fortunate enough to work with{" "}
@@ -32,7 +32,7 @@ function Bio() {
                 Prof. Erik Waingarten
               </a>{" "}
               on online algorithms for large datasets.
-            Over Summer 2025, I was also mentored by{" "} 
+            Over Summer 2025, I worked on sequential truth learning in social networks under{" "} 
             <a
               href="https://sites.rutgers.edu/jie-gao/about/"  
               target="_blank"
@@ -44,6 +44,7 @@ function Bio() {
               {/* I'm a huge fan of puzzles of all kinds, namely lateral thinking puzzles
               and quantitative brain teasers.  */}
               In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. Before discovering TCS, I was obsessed with the startup space, and was particularly fascinated by innovative climate technologies. 
+              {/* In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. Before discovering TCS, I wore many hats across a wide array of roles at Epic, SIG, & Contrary. */}
             </p>
           </div>
         </div>
