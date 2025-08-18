@@ -20,7 +20,7 @@ function Bio() {
           <div className="bio-text">
             <h4>About Me</h4>
             <p>
-              Hi! I'm William, a rising fourth year dual-degree bachelor's student at UPenn studying CS and Statistics. I'm broadly interested in discrete probability and its uses in theoretical computer science. Some topics I am particularly interested in are combinatorial optimization, processes on networks, and streaming algorithms. 
+              Hi! I'm William, a rising fourth year Engineering & Wharton student at UPenn studying CS and Statistics. I'm broadly interested in discrete probability and its uses in theoretical computer science. Some topics I am particularly interested in are combinatorial optimization, processes on networks, and streaming algorithms. 
             </p>
             <p>  
               I am fortunate enough to work with{" "}
@@ -40,12 +40,6 @@ function Bio() {
               Prof. Jie Gao
             </a> as a participant in the{" "}<a href="https://reu.dimacs.rutgers.edu/" target="_blank">DIMACS REU</a>.
             </p> 
-            <p>
-              {/* I'm a huge fan of puzzles of all kinds, namely lateral thinking puzzles
-              and quantitative brain teasers.  */}
-              In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. Before discovering TCS, I was obsessed with the startup space, and was particularly fascinated by innovative climate technologies. 
-              {/* In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. Before discovering TCS, I wore many hats across a wide array of roles at Epic, SIG, & Contrary. */}
-            </p>
           </div>
         </div>
 
@@ -59,16 +53,22 @@ function Bio() {
             </ul>
           </div>
 
-          {/* <div className="course-notes">
-            <h4>Notes</h4>
-            <a 
-              href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes"
-              target="_blank"
-              rel="noreferrer"
-            >
-              NETS 4120: Algorithmic Game Theory
-            </a>
-          </div> */}
+          <div className="other-experience">
+            <h4>Other</h4>
+            <ul>
+              <li>Before discovering TCS, I explored many things in many different fields. Previously, I was a software intern at Epic Systems, and before this, I was a venture capital intern at Susquehanna International Group. </li>
+              <li> In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. </li>
+              <li>Notes for{' '}
+                  <a 
+                  href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  NETS 4120: Algorithmic Game Theory
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     )
