@@ -3,17 +3,25 @@ import streampca from "../files/Streaming_PCA.pdf"
 import multicalibpaper from '../files/Multicalib_CIS6200.pdf'
 import stat9310 from "../files/STAT_9310_Project.pdf"
 import pcaposter from "../files/WALDO_Poster.pdf"
-import dimacs from "../files/DIMACS_slides.pdf"
+import dimacs_slides from "../files/DIMACS_slides.pdf"
+import dimacs_writeup from "../files/truth_learning.pdf"
 
 function Research () {
 
     const topics = [
         {
+            'title': "Efficient Algorithms for High-Dimensional Earth Mover's Distance",
+            'authors': "William Guo, Erik Waingarten",
+            'desc': 'Senior Thesis',
+            'links': [],
+        },
+        {
             'title': "Truth Learning in Social Networks Under Random Decision Orderings",
             'authors': "William Guo, Edward Xiong, Jie Gao",
-            'desc': 'DIMACS REU 2025. In progress',
+            'desc': 'DIMACS REU 2025 Project',
             'links': [
-                {'link': dimacs, 'text': '[Presentation]'},
+                {'link': dimacs_writeup, 'text': '[Manuscript]'},
+                {'link': dimacs_slides, 'text': '[Presentation]'},
             ],
         },
         {
@@ -25,14 +33,14 @@ function Research () {
                 {'link': pcaposter, 'text': '[Poster]'}
             ],
         },
-        {
-            'title': "Online Regret Minimization via Rademacher Complexities",
-            'desc': "Final project for STAT 9310: Stochastic Processes",
-            'authors': "William Guo",
-            'links': [
-                {link: stat9310, 'text': '[PDF]'}
-            ]
-        },
+        // {
+        //     'title': "Online Regret Minimization via Rademacher Complexities",
+        //     'desc': "Final project for STAT 9310: Stochastic Processes",
+        //     'authors': "William Guo",
+        //     'links': [
+        //         {link: stat9310, 'text': '[PDF]'}
+        //     ]
+        // },
         {
             'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
             'desc': "Final project for CIS 6200: Conditional Learning",

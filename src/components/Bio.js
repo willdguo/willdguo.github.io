@@ -20,7 +20,7 @@ function Bio() {
           <div className="bio-text">
             <h4>About Me</h4>
             <p>
-              Hi! I'm William, a rising fourth year Engineering & Wharton student at UPenn studying CS and Statistics. I'm broadly interested in discrete probability and its uses in theoretical computer science. Some topics I am particularly interested in are combinatorial optimization, processes on networks, and streaming algorithms. 
+              Hi! I'm William, a fourth year Engineering & Wharton undergrad at UPenn studying CS and Statistics. I'm broadly interested in probability and its uses in theoretical computer science. Some topics I am particularly interested in are combinatorial optimization, random processes on networks, and high-dimensional datasets. 
             </p>
             <p>  
               I am fortunate enough to work with{" "}
@@ -56,7 +56,7 @@ function Bio() {
           <div className="other-experience">
             <h4>Other</h4>
             <ul>
-              <li>Before discovering TCS, I explored many things in many different fields. Previously, I was a software intern at Epic Systems, and before this, I was a venture capital intern at Susquehanna International Group. </li>
+              <li>Before discovering TCS, I was interested in software & startups. I previously interned as a SDE at Epic Systems, and before this, I was a venture capital intern at Susquehanna International Group. </li>
               <li> In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. </li>
               <li>Notes for{' '}
                   <a 
