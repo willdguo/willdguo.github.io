@@ -20,7 +20,7 @@ function Bio() {
           <div className="bio-text">
             <h4>About Me</h4>
             <p>
-              Hi! I'm William, a fourth year Engineering & Wharton undergrad at UPenn studying CS and Statistics. I'm broadly interested in probability and its uses in theoretical computer science. Some topics I am particularly interested in are combinatorial optimization, random processes on networks, and high-dimensional datasets. 
+              Hi! I'm William, a fourth year Engineering & Wharton undergrad at UPenn studying CS and Statistics. I'm broadly interested in theoretical computer science, and the use of randomization/approximation for large-scale computation. Some topics I have worked on include streaming algorithms, problems in high-dimensional geometry, and learning in random networks. 
             </p>
             <p>  
               I am fortunate enough to work with{" "}
@@ -31,8 +31,8 @@ function Bio() {
               >
                 Prof. Erik Waingarten
               </a>{" "}
-              on online algorithms for large datasets.
-            Over Summer 2025, I worked on sequential truth learning in social networks under{" "} 
+              on algorithms for massive datasets.
+            Over Summer 2025, I researched social learning in networks under{" "} 
             <a
               href="https://sites.rutgers.edu/jie-gao/about/"  
               target="_blank"
@@ -49,14 +49,14 @@ function Bio() {
             <ul>
               <li> ESE 5300: Elements of Probability Theory (Fall 2025)</li>
               <li> CIS 3200: Introduction to Algorithms, Head of Homework Committee (Spring 2025)</li>
-              <li> CIS 1600: Discrete Math, Head of Homework Committee (Fall 2024, Spring 2024)</li>
+              <li> CIS 1600: Discrete Math, Head of Homework Committee (Spring 2024, Fall 2024)</li>
             </ul>
           </div>
 
           <div className="other-experience">
             <h4>Other</h4>
             <ul>
-              <li>Before discovering TCS, I was interested in software & startups. I previously interned as a SDE at Epic Systems, and before this, I was a venture capital intern at Susquehanna International Group. </li>
+              <li>Before discovering TCS, I was quite invested in the early-stage climate tech space. I previously interned at a predictive energy management startup, and before this, I was a venture capital intern at Susquehanna International Group. </li>
               <li> In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. </li>
               <li>Notes for{' '}
                   <a 

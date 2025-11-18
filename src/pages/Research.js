@@ -18,7 +18,7 @@ function Research () {
         {
             'title': "Truth Learning in Social Networks Under Random Decision Orderings",
             'authors': "William Guo, Edward Xiong, Jie Gao",
-            'desc': 'DIMACS REU 2025 Project',
+            'desc': 'DIMACS REU 2025 (in submission).',
             'links': [
                 {'link': dimacs_writeup, 'text': '[Manuscript]'},
                 {'link': dimacs_slides, 'text': '[Presentation]'},
@@ -33,20 +33,20 @@ function Research () {
                 {'link': pcaposter, 'text': '[Poster]'}
             ],
         },
-        // {
-        //     'title': "Online Regret Minimization via Rademacher Complexities",
-        //     'desc': "Final project for STAT 9310: Stochastic Processes",
-        //     'authors': "William Guo",
-        //     'links': [
-        //         {link: stat9310, 'text': '[PDF]'}
-        //     ]
-        // },
         {
             'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
             'desc': "Final project for CIS 6200: Conditional Learning",
             'authors': "William Guo, Max Rubin-Toles",
             'links': [
                 {link: multicalibpaper, 'text': '[PDF]'}
+            ]
+        },
+        {
+            'title': "Online Regret Minimization via Rademacher Complexities",
+            'desc': "Final project for STAT 9310: Stochastic Processes",
+            'authors': "William Guo",
+            'links': [
+                {link: stat9310, 'text': '[PDF]'}
             ]
         },
     ]
