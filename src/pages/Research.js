@@ -5,6 +5,7 @@ import stat9310 from "../files/STAT_9310_Project.pdf"
 import pcaposter from "../files/WALDO_Poster.pdf"
 import dimacs_slides from "../files/DIMACS_slides.pdf"
 import dimacs_writeup from "../files/truth_learning.pdf"
+import dimacs_poster from "../files/truth_learning_poster.pdf"
 
 function Research () {
 
@@ -16,12 +17,14 @@ function Research () {
             'links': [],
         },
         {
-            'title': "Truth Learning in Social Networks Under Random Decision Orderings",
+            // 'title': "Truth Learning in Social Networks Under Random Decision Orderings",
+            'title': "Robust Sequential Learning in Random Order Networks",
             'authors': "William Guo, Edward Xiong, Jie Gao",
             'desc': 'DIMACS REU 2025 (in submission).',
             'links': [
                 {'link': dimacs_writeup, 'text': '[Manuscript]'},
                 {'link': dimacs_slides, 'text': '[Presentation]'},
+                {'link': dimacs_poster, 'text': '[Poster]'},
             ],
         },
         {
