@@ -6,6 +6,7 @@ import pcaposter from "../files/WALDO_Poster.pdf"
 import dimacs_slides from "../files/DIMACS_slides.pdf"
 import dimacs_writeup from "../files/truth_learning.pdf"
 import dimacs_poster from "../files/truth_learning_poster.pdf"
+import srthesis_milestone from "../files/sr_thesis_milestone.pdf"
 
 function Research () {
 
@@ -14,7 +15,9 @@ function Research () {
             'title': "Efficient Algorithms for High-Dimensional Earth Mover's Distance",
             'authors': "William Guo, Erik Waingarten",
             'desc': 'Senior Thesis',
-            'links': [],
+            'links': [
+                {'link': srthesis_milestone, 'text': 'Milestone Report'},
+            ],
         },
         {
             // 'title': "Truth Learning in Social Networks Under Random Decision Orderings",
