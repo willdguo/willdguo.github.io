@@ -23,9 +23,9 @@ function Research () {
             // 'title': "Truth Learning in Social Networks Under Random Decision Orderings",
             'title': "Robust Sequential Learning in Random Order Networks",
             'authors': "William Guo, Edward Xiong, Jie Gao",
-            'desc': 'DIMACS REU 2025 (in submission).',
+            'desc': 'To appear in AAMAS 2026',
             'links': [
-                {'link': dimacs_writeup, 'text': '[Manuscript]'},
+                {'link': dimacs_writeup, 'text': '[PDF]'},
                 {'link': dimacs_slides, 'text': '[Presentation]'},
                 {'link': dimacs_poster, 'text': '[Poster]'},
             ],
