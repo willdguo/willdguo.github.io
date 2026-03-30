@@ -56,7 +56,7 @@ const NavBar = () => {
         <Nav className='navbarnav'>
           <Nav.Link as={Link} to = "/home"> Home </Nav.Link>
           <Nav.Link as={Link} to = "/research"> Research </Nav.Link>
-          <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link>
+          {/* <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link> */}
           {/* <Nav.Link as={Link} to = "/blog"> Blog </Nav.Link> */}
           {/* <Nav.Link href = "/puzzles"> Puzzles </Nav.Link> */}
         </Nav>

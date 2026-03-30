@@ -23,22 +23,26 @@ function Bio() {
               Hi! I'm William, a fourth year Engineering & Wharton undergrad at UPenn studying CS and Statistics. I'm broadly interested in theoretical computer science, and the use of randomization/approximation for large-scale computation. Some topics I have worked on include streaming algorithms, problems in high-dimensional geometry, and learning in random networks. 
             </p>
             <p>  
-              I am fortunate enough to work with{" "}
+              I am fortunate enough to work with Erik Waingarten on algorithms for massive datasets.
+
+              {/* {" "}
               <a
                 href="https://sites.google.com/site/erikwaing/home?authuser=0"
                 target="_blank"
                 rel="noreferrer"
               >
                 Prof. Erik Waingarten
-              </a>{" "}
-              on algorithms for massive datasets.
-            Over Summer 2025, I researched social learning in networks under{" "} 
+              </a>{" "} */}
+            {" "} Over Summer 2025, I researched social learning in networks under Jie Gao as a participant in the DIMACS REU.
+
+            {/* {" "} 
             <a
               href="https://sites.rutgers.edu/jie-gao/about/"  
               target="_blank"
             >
               Prof. Jie Gao
-            </a> as a participant in the{" "}<a href="https://reu.dimacs.rutgers.edu/" target="_blank">DIMACS REU</a>.
+            </a>  */}
+            {/* {" "}<a href="https://reu.dimacs.rutgers.edu/" target="_blank">DIMACS REU</a>. */}
             </p> 
           </div>
         </div>
@@ -56,9 +60,9 @@ function Bio() {
           <div className="other-experience">
             <h4>Other</h4>
             <ul>
-              <li>Before discovering TCS, I was quite invested in the early-stage climate tech space. I previously interned at a predictive energy management startup, and before this, I was a venture capital intern at Susquehanna International Group. </li>
+              <li>Before discovering TCS, I was quite invested in the early-stage startup space. I previously interned at a predictive energy management startup, and before this, I was a venture capital intern at Susquehanna International Group. </li>
               <li> In my free time, I enjoy pickup soccer/volleyball, playing piano, and bouldering. </li>
-              <li>Notes for{' '}
+              {/* <li>Notes for{' '}
                   <a 
                   href="https://willdguo.github.io/quartz/NETS-4120-Lecture-Notes"
                   target="_blank"
@@ -66,7 +70,7 @@ function Bio() {
                 >
                   NETS 4120: Algorithmic Game Theory
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

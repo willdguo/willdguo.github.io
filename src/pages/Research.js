@@ -11,14 +11,14 @@ import srthesis_milestone from "../files/sr_thesis_milestone.pdf"
 function Research () {
 
     const topics = [
-        {
-            'title': "Efficient Algorithms for High-Dimensional Earth Mover's Distance",
-            'authors': "William Guo, Erik Waingarten",
-            'desc': 'Senior Thesis',
-            'links': [
-                {'link': srthesis_milestone, 'text': 'Milestone Report'},
-            ],
-        },
+        // {
+        //     'title': "Efficient Algorithms for High-Dimensional Earth Mover's Distance",
+        //     'authors': "William Guo, Erik Waingarten",
+        //     'desc': 'Senior Thesis',
+        //     'links': [
+        //         {'link': srthesis_milestone, 'text': 'Milestone Report'},
+        //     ],
+        // },
         {
             // 'title': "Truth Learning in Social Networks Under Random Decision Orderings",
             'title': "Robust Sequential Learning in Random Order Networks",
@@ -26,35 +26,35 @@ function Research () {
             'desc': 'To appear in AAMAS 2026',
             'links': [
                 {'link': dimacs_writeup, 'text': '[PDF]'},
-                {'link': dimacs_slides, 'text': '[Presentation]'},
-                {'link': dimacs_poster, 'text': '[Poster]'},
+                // {'link': dimacs_slides, 'text': '[Presentation]'},
+                // {'link': dimacs_poster, 'text': '[Poster]'},
             ],
         },
-        {
-            'title': "Oja’s Algorithm for Streaming PCA: Tight Guarantees for Sparse Matrices",
-            'authors': "William Guo, Erik Waingarten",
-            'desc': 'Workshop on Algorithms for Large Data (Online) 2025',
-            'links': [
-                {'link': streampca, 'text': '[PDF]'},
-                {'link': pcaposter, 'text': '[Poster]'}
-            ],
-        },
-        {
-            'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
-            'desc': "Final project for CIS 6200: Conditional Learning",
-            'authors': "William Guo, Max Rubin-Toles",
-            'links': [
-                {link: multicalibpaper, 'text': '[PDF]'}
-            ]
-        },
-        {
-            'title': "Online Regret Minimization via Rademacher Complexities",
-            'desc': "Final project for STAT 9310: Stochastic Processes",
-            'authors': "William Guo",
-            'links': [
-                {link: stat9310, 'text': '[PDF]'}
-            ]
-        },
+        // {
+        //     'title': "Oja’s Algorithm for Streaming PCA: Tight Guarantees for Sparse Matrices",
+        //     'authors': "William Guo, Erik Waingarten",
+        //     'desc': 'Workshop on Algorithms for Large Data (Online) 2025',
+        //     'links': [
+        //         {'link': streampca, 'text': '[PDF]'},
+        //         {'link': pcaposter, 'text': '[Poster]'}
+        //     ],
+        // },
+        // {
+        //     'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
+        //     'desc': "Final project for CIS 6200: Conditional Learning",
+        //     'authors': "William Guo, Max Rubin-Toles",
+        //     'links': [
+        //         {link: multicalibpaper, 'text': '[PDF]'}
+        //     ]
+        // },
+        // {
+        //     'title': "Online Regret Minimization via Rademacher Complexities",
+        //     'desc': "Final project for STAT 9310: Stochastic Processes",
+        //     'authors': "William Guo",
+        //     'links': [
+        //         {link: stat9310, 'text': '[PDF]'}
+        //     ]
+        // },
     ]
 
     return (

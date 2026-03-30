@@ -50,7 +50,7 @@ function Projects() {
         "id": "1",
     },
     {
-        "title": "Startup Newsletter",
+        "title": "Startup Deep Dives",
         "img": cresearch,
         "desc": "Conducted in-depth market research on interesting startups & technologies (i.e. Anthropic, MasterClass, Postman) for Contrary.",
         "link": "https://research.contrary.com/company?author=William+Guo",
