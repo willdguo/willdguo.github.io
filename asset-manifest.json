@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a53f8059.css",
+    "main.js": "/static/js/main.43fef6d0.js",
+    "static/media/contraryresearch.png": "/static/media/contraryresearch.87a0ed54317fddd0f955.png",
+    "static/media/truth_learning_poster.pdf": "/static/media/truth_learning_poster.d8ef114d972f22f3295b.pdf",
+    "static/media/WALDO_Poster.pdf": "/static/media/WALDO_Poster.0d84bf6ca6cc5f6c7435.pdf",
+    "static/media/willguo6.png": "/static/media/willguo6.a444e891ec76e13e79ab.png",
+    "static/media/truth_learning.pdf": "/static/media/truth_learning.428a5e5b0bf29516f60b.pdf",
+    "static/media/sr_thesis_milestone.pdf": "/static/media/sr_thesis_milestone.0530c2327b83276c99b3.pdf",
+    "static/media/ohq.png": "/static/media/ohq.ea84bc69e45a4cd3b112.png",
+    "static/media/speedmath.png": "/static/media/speedmath.531d8bc7fcd5763e1a0a.png",
+    "static/media/Streaming_PCA.pdf": "/static/media/Streaming_PCA.a1ef19ef6e55f2fde416.pdf",
+    "static/media/DIMACS_slides.pdf": "/static/media/DIMACS_slides.bb4b82ebf9385119d26d.pdf",
+    "static/media/Multicalib_CIS6200.pdf": "/static/media/Multicalib_CIS6200.3779e095154aec9c37c0.pdf",
+    "static/media/multicalib_thumb.png": "/static/media/multicalib_thumb.7c7b32365da375bb8b29.png",
+    "static/media/STAT_9310_Project.pdf": "/static/media/STAT_9310_Project.2b89ee9944c16096935b.pdf",
+    "static/media/stat9310_thumb.png": "/static/media/stat9310_thumb.77b91f804a2b70584763.png",
+    "static/media/cowork2.png": "/static/media/cowork2.5a42afc46f6024558cd9.png",
+    "index.html": "/index.html",
+    "main.a53f8059.css.map": "/static/css/main.a53f8059.css.map",
+    "main.43fef6d0.js.map": "/static/js/main.43fef6d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a53f8059.css",
+    "static/js/main.43fef6d0.js"
+  ]
+}
