@@ -2,6 +2,7 @@ import './App.css'
 import { Navbar, Container, Nav } from "react-bootstrap"
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
+import { SiGooglescholar } from 'react-icons/si'
 import Puzzles from "./pages/Puzzles"
 import PageNotFound from "./components/PageNotFound"
 import { Routes, Link, Route, Navigate } from "react-router-dom"
@@ -9,6 +10,8 @@ import Research from './pages/Research'
 import Projects from './pages/Projects'
 // import Blog from './pages/Blog'
 import Bio from './components/Bio'
+import RandomWalkBackground from './components/RandomWalkBackground'
+import { GoMail } from 'react-icons/go'
 
 function App() {
 
@@ -23,7 +26,7 @@ function App() {
     
       <div className = "container"
         style={{
-          minHeight: "calc(100vh - 160px)",
+          minHeight: "calc(100vh - 120px)",
           marginTop: "10px",
           marginBottom: "10px",
         }}
@@ -56,7 +59,7 @@ const NavBar = () => {
         <Nav className='navbarnav'>
           <Nav.Link as={Link} to = "/home"> Home </Nav.Link>
           <Nav.Link as={Link} to = "/research"> Research </Nav.Link>
-          {/* <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link> */}
+          <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link>
           {/* <Nav.Link as={Link} to = "/blog"> Blog </Nav.Link> */}
           {/* <Nav.Link href = "/puzzles"> Puzzles </Nav.Link> */}
         </Nav>
@@ -77,12 +80,23 @@ const SocialBar = () => {
         backgroundColor: '#f8f9fa' 
       }}
     >
-      <p style={{color: '#aaa'}}>
+      {/* <p style={{color: '#aaa'}}>
         willguo6 [at] seas [dot] upenn [dot] edu
-      </p>
+        {' .'}
+      </p> */}
       {/* <a className="social-icon" href = "https://x.com/willdguo" target="_blank" rel="noreferrer">
         <FaXTwitter />
       </a> */}
+      {/* <a className="social-icon" href="mailto:willguo6@seas.upenn.edu"> */}
+      <a className = "social-icon" href="mailto:wig001@ucsd.edu">
+        <GoMail/>
+      </a>
+      <a className = "social-icon" 
+        href = "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=HwEGXIQAAAAJ"
+        target="_blank" refl = "noreferrer"
+      >
+        <SiGooglescholar />
+      </a>
       <a className="social-icon" href="https://github.com/willdguo" target="_blank" rel="noreferrer">
         <FaGithub/>
       </a>

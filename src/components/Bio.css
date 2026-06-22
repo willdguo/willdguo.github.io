@@ -30,6 +30,8 @@
     justify-content: space-between;
     width: 100%;
     gap: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .profpic img {
@@ -44,12 +46,18 @@
     text-align: left;
 }
 
+.bio-text a {
+    text-decoration: none;
+}
+
 .bio-bottom {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 20px;
     text-align: left;
+    position: relative;
+    z-index: 1;
 }
 
 .teaching-experience, .course-notes {

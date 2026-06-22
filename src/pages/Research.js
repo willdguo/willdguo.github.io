@@ -8,6 +8,8 @@ import dimacs_writeup from "../files/truth_learning.pdf"
 import dimacs_poster from "../files/truth_learning_poster.pdf"
 import srthesis_milestone from "../files/sr_thesis_milestone.pdf"
 
+import RandomWalkBackground from "../components/RandomWalkBackground"
+
 function Research () {
 
     const topics = [
@@ -23,10 +25,10 @@ function Research () {
             // 'title': "Truth Learning in Social Networks Under Random Decision Orderings",
             'title': "Robust Sequential Learning in Random Order Networks",
             'authors': "William Guo, Edward Xiong, Jie Gao",
-            'desc': 'To appear in AAMAS 2026',
+            'desc': 'AAMAS 2026',
             'links': [
-                {'link': dimacs_writeup, 'text': '[PDF]'},
-                // {'link': dimacs_slides, 'text': '[Presentation]'},
+                {'link': 'https://arxiv.org/abs/2602.08953', 'text': '[arXiv]'},
+                {'link': dimacs_slides, 'text': '[slides]'},
                 // {'link': dimacs_poster, 'text': '[Poster]'},
             ],
         },
@@ -71,6 +73,9 @@ function Research () {
                     />
                 ))}
             </div>
+
+            <RandomWalkBackground />
+
         </div>
     )
 }
