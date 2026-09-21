@@ -3,21 +3,15 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import RandomWalkBackground from './components/RandomWalkBackground';
 import Home from './pages/Home';
-import About from './pages/About';
 import Research from './pages/Research';
-import Publications from './pages/Publications';
 import Teaching from './pages/Teaching';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
 import PageNotFound from './components/PageNotFound';
 
 const navItems = [
-  ['About', '/about'],
   ['Research', '/research'],
-  ['Publications', '/publications'],
   ['Teaching', '/teaching'],
   ['Projects / Notes', '/projects'],
-  ['Contact', '/contact'],
 ];
 
 function ScrollToTop() {
@@ -77,12 +71,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/research" element={<Research />} />
-          <Route path="/publications" element={<Publications />} />
           <Route path="/teaching" element={<Teaching />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>

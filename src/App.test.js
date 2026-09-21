@@ -11,10 +11,9 @@ test('navigates between the primary research pages without an effect cleanup err
 
   const navigation = screen.getByRole('navigation', { name: 'Primary navigation' });
   fireEvent.click(within(navigation).getByRole('link', { name: 'Research' }));
-  expect(screen.getByRole('heading', { name: 'Algorithms under uncertainty.' })).not.toBeNull();
+  expect(screen.getByRole('heading', { name: 'Research', level: 1 })).not.toBeNull();
 
-  fireEvent.click(within(navigation).getByRole('link', { name: 'Publications' }));
-  expect(screen.getByRole('heading', { name: 'Work, in detail.' })).not.toBeNull();
+  expect(screen.getByRole('heading', { name: 'Publications' })).not.toBeNull();
 
   fireEvent.click(within(navigation).getByRole('link', { name: 'Projects / Notes' }));
   expect(screen.getByRole('heading', { name: 'Things I’ve explored.' })).not.toBeNull();

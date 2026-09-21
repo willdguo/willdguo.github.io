@@ -6,7 +6,7 @@ Responsive research website built with React and deployed to GitHub Pages.
 
 - Add publications in `src/data/publications.js`. Each entry supports authors, venue, year, abstract, PDF, arXiv, slides, code, and BibTeX.
 - Add projects in `src/data/projects.js`.
-- Edit page copy in `src/pages/`.
+- Edit page copy in `src/pages/`. Biography content lives on the homepage; research interests and publications share the Research page.
 
 ## Local development
 
