@@ -1,110 +1,90 @@
-import './App.css'
-import { Navbar, Container, Nav } from "react-bootstrap"
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
-import { SiGooglescholar } from 'react-icons/si'
-import Puzzles from "./pages/Puzzles"
-import PageNotFound from "./components/PageNotFound"
-import { Routes, Link, Route, Navigate } from "react-router-dom"
-import Research from './pages/Research'
-import Projects from './pages/Projects'
-// import Blog from './pages/Blog'
-import Bio from './components/Bio'
-import RandomWalkBackground from './components/RandomWalkBackground'
-import { GoMail } from 'react-icons/go'
+import { NavLink, Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import './App.css';
+import RandomWalkBackground from './components/RandomWalkBackground';
+import Home from './pages/Home';
+import About from './pages/About';
+import Research from './pages/Research';
+import Publications from './pages/Publications';
+import Teaching from './pages/Teaching';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import PageNotFound from './components/PageNotFound';
 
-function App() {
+const navItems = [
+  ['About', '/about'],
+  ['Research', '/research'],
+  ['Publications', '/publications'],
+  ['Teaching', '/teaching'],
+  ['Projects / Notes', '/projects'],
+  ['Contact', '/contact'],
+];
 
-  const rootStyle = {
-    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  };
-  
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  return null;
+}
+
+function Header() {
+  const [open, setOpen] = useState(false);
+  const location = useLocation();
+  useEffect(() => setOpen(false), [location.pathname]);
+
   return (
-
-    <div style={rootStyle}>
-      <NavBar />
-    
-      <div className = "container"
-        style={{
-          minHeight: "calc(100vh - 120px)",
-          marginTop: "10px",
-          marginBottom: "10px",
-        }}
-      >
-        <Routes>
-          <Route path = "/" element = {<Navigate replace to = "/home"/>} />
-          <Route path = "/home" element = {<Bio />}/>
-          <Route path = "/puzzles" element = {<Puzzles />}/>
-          {/* <Route path = "/rants" element = {<Rants />} /> */}
-          <Route path = "/research" element = {<Research />} />
-          <Route path = "/projects" element = {<Projects />} />
-          {/* <Route path = "/blog" element = {<Blog />} /> */}
-          <Route path = "/*" element = {<Navigate replace to = "/404"/>} />
-          <Route path = "/404" element = {<PageNotFound />} />
-        </Routes>
+    <header className="site-header">
+      <div className="nav-shell">
+        <NavLink className="wordmark" to="/" aria-label="William Guo, home">
+          WG<span className="wordmark-dot">.</span>
+        </NavLink>
+        <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="site-nav">
+          <span className="sr-only">Toggle navigation</span>
+          <span /><span /><span />
+        </button>
+        <nav id="site-nav" className={open ? 'site-nav is-open' : 'site-nav'} aria-label="Primary navigation">
+          {navItems.map(([label, path]) => (
+            <NavLink key={path} to={path} className={({ isActive }) => isActive ? 'active' : undefined}>{label}</NavLink>
+          ))}
+        </nav>
       </div>
-
-      <SocialBar />
-    </div>
-    
-  )
+    </header>
+  );
 }
 
-const NavBar = () => {
-
+function Footer() {
   return (
-    <Navbar className='navbar' bg = "light" data-bs-theme = "light" >
-      <Container>
-        <Navbar.Brand className='navbarbrand' as={Link} to="/home"> William Guo </Navbar.Brand>
-        <Nav className='navbarnav'>
-          <Nav.Link as={Link} to = "/home"> Home </Nav.Link>
-          <Nav.Link as={Link} to = "/research"> Research </Nav.Link>
-          <Nav.Link as={Link} to = "/projects"> Projects </Nav.Link>
-          {/* <Nav.Link as={Link} to = "/blog"> Blog </Nav.Link> */}
-          {/* <Nav.Link href = "/puzzles"> Puzzles </Nav.Link> */}
-        </Nav>
-      </Container>
-    </Navbar>
-  )
+    <footer className="site-footer">
+      <div><strong>William Guo</strong><br /><span>Algorithms · probability · theory</span></div>
+      <div className="footer-links">
+        <a href="mailto:wig001@ucsd.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=HwEGXIQAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a href="https://github.com/willdguo" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </footer>
+  );
 }
 
-const SocialBar = () => {
-
+export default function App() {
   return (
-    <div style={{
-        position: 'relative',
-        bottom: '0',
-        width: '100%',
-        textAlign: 'center',
-        padding: '10px',
-        backgroundColor: '#f8f9fa' 
-      }}
-    >
-      {/* <p style={{color: '#aaa'}}>
-        willguo6 [at] seas [dot] upenn [dot] edu
-        {' .'}
-      </p> */}
-      {/* <a className="social-icon" href = "https://x.com/willdguo" target="_blank" rel="noreferrer">
-        <FaXTwitter />
-      </a> */}
-      {/* <a className="social-icon" href="mailto:willguo6@seas.upenn.edu"> */}
-      <a className = "social-icon" href="mailto:wig001@ucsd.edu">
-        <GoMail/>
-      </a>
-      <a className = "social-icon" 
-        href = "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=HwEGXIQAAAAJ"
-        target="_blank" refl = "noreferrer"
-      >
-        <SiGooglescholar />
-      </a>
-      <a className="social-icon" href="https://github.com/willdguo" target="_blank" rel="noreferrer">
-        <FaGithub/>
-      </a>
-      <a className="social-icon" href = "https://www.linkedin.com/in/willdguo/" target="_blank" rel="noreferrer">
-        <FaLinkedin />
-      </a>
+    <div className="app-shell">
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <ScrollToTop />
+      <Header />
+      <RandomWalkBackground />
+      <main id="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/teaching" element={<Teaching />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
-  ) 
+  );
 }
-
-export default App;
