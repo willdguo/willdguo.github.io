@@ -22,21 +22,23 @@ const navItems = [
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return null;
 }
 
 function Header() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-  useEffect(() => setOpen(false), [location.pathname]);
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
 
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <NavLink className="wordmark" to="/" aria-label="William Guo, home">
-          WG<span className="wordmark-dot">.</span>
-        </NavLink>
+        <NavLink className="wordmark" to="/">William Guo</NavLink>
         <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="site-nav">
           <span className="sr-only">Toggle navigation</span>
           <span /><span /><span />
