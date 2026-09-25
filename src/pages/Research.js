@@ -1,83 +1,52 @@
-import ResearchCard from "../components/ResearchCard";
-import streampca from "../files/Streaming_PCA.pdf"
-import multicalibpaper from '../files/Multicalib_CIS6200.pdf'
-import stat9310 from "../files/STAT_9310_Project.pdf"
-import pcaposter from "../files/WALDO_Poster.pdf"
-import dimacs_slides from "../files/DIMACS_slides.pdf"
-import dimacs_writeup from "../files/truth_learning.pdf"
-import dimacs_poster from "../files/truth_learning_poster.pdf"
-import srthesis_milestone from "../files/sr_thesis_milestone.pdf"
+import { useState } from 'react';
+import publications from '../data/publications';
 
-import RandomWalkBackground from "../components/RandomWalkBackground"
+function Publication({ publication }) {
+  const [abstractOpen, setAbstractOpen] = useState(false);
+  const resources = [
+    ['PDF', publication.pdf], ['arXiv', publication.arxiv], ['Slides', publication.slides],
+    ['Code', publication.code], ['BibTeX', publication.bibtex],
+  ].filter(([, link]) => link);
 
-function Research () {
-
-    const topics = [
-        // {
-        //     'title': "Efficient Algorithms for High-Dimensional Earth Mover's Distance",
-        //     'authors': "William Guo, Erik Waingarten",
-        //     'desc': 'Senior Thesis',
-        //     'links': [
-        //         {'link': srthesis_milestone, 'text': 'Milestone Report'},
-        //     ],
-        // },
-        {
-            // 'title': "Truth Learning in Social Networks Under Random Decision Orderings",
-            'title': "Robust Sequential Learning in Random Order Networks",
-            'authors': "William Guo, Edward Xiong, Jie Gao",
-            'desc': 'AAMAS 2026',
-            'links': [
-                {'link': 'https://arxiv.org/abs/2602.08953', 'text': '[arXiv]'},
-                {'link': dimacs_slides, 'text': '[slides]'},
-                // {'link': dimacs_poster, 'text': '[Poster]'},
-            ],
-        },
-        // {
-        //     'title': "Oja’s Algorithm for Streaming PCA: Tight Guarantees for Sparse Matrices",
-        //     'authors': "William Guo, Erik Waingarten",
-        //     'desc': 'Workshop on Algorithms for Large Data (Online) 2025',
-        //     'links': [
-        //         {'link': streampca, 'text': '[PDF]'},
-        //         {'link': pcaposter, 'text': '[Poster]'}
-        //     ],
-        // },
-        // {
-        //     'title': "Sequential Algorithms Minimizing Distance to Multicalibration",
-        //     'desc': "Final project for CIS 6200: Conditional Learning",
-        //     'authors': "William Guo, Max Rubin-Toles",
-        //     'links': [
-        //         {link: multicalibpaper, 'text': '[PDF]'}
-        //     ]
-        // },
-        // {
-        //     'title': "Online Regret Minimization via Rademacher Complexities",
-        //     'desc': "Final project for STAT 9310: Stochastic Processes",
-        //     'authors': "William Guo",
-        //     'links': [
-        //         {link: stat9310, 'text': '[PDF]'}
-        //     ]
-        // },
-    ]
-
-    return (
-        <div style={{padding: '10px', marginLeft: '40px'}}>
-            <h3 style={{fontWeight:'400'}}> Research </h3>
-            <div style={{paddingTop: '20px'}}>
-                {topics.map((topic, idx) => (
-                    <ResearchCard 
-                        key={idx} 
-                        title={topic.title} 
-                        desc={topic.desc} 
-                        authors={topic.authors}
-                        links={topic.links}
-                    />
-                ))}
-            </div>
-
-            <RandomWalkBackground />
-
+  return (
+    <article className="publication">
+      <div className="publication-year">{publication.year}</div>
+      <div>
+        <p className="venue">{publication.venue}</p>
+        <h2>{publication.title}</h2>
+        <p className="authors">{publication.authors.join(', ')}</p>
+        <div className="resource-links">
+          {resources.map(([label, link]) => <a key={label} href={link} target="_blank" rel="noreferrer">{label}</a>)}
+          {publication.abstract && <button onClick={() => setAbstractOpen(!abstractOpen)} aria-expanded={abstractOpen}>Abstract {abstractOpen ? '−' : '+'}</button>}
         </div>
-    )
+        {abstractOpen && <p className="abstract">{publication.abstract}</p>}
+      </div>
+    </article>
+  );
 }
 
-export default Research;
+export default function Research() {
+  return (
+    <div className="page-shell interior-page narrow-page">
+      <header className="page-heading">
+        <h1>Research</h1>
+        <p>I am broadly interested in theoretical computer science, with a focus on randomized and approximation algorithms.</p>
+      </header>
+
+      <section className="research-section" aria-labelledby="interests-title">
+        <h2 id="interests-title">Interests</h2>
+        <dl className="research-interests">
+          <div><dt>Randomized algorithms</dt><dd>Using controlled randomness to design efficient algorithms with rigorous guarantees.</dd></div>
+          <div><dt>Approximation algorithms</dt><dd>Efficiently finding solutions of provable quality when exact optimization is computationally expensive.</dd></div>
+          <div><dt>Large-scale computation</dt><dd>Streaming and high-dimensional settings where time, memory, or access to data is limited.</dd></div>
+          <div><dt>Stochastic processes</dt><dd>Earlier work on online learning and sequential learning in networks.</dd></div>
+        </dl>
+      </section>
+
+      <section className="research-section" aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+        <div className="publication-list">{publications.map(publication => <Publication key={publication.id} publication={publication} />)}</div>
+      </section>
+    </div>
+  );
+}
