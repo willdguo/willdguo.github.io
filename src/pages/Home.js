@@ -4,6 +4,12 @@ import publications from '../data/publications';
 
 export default function Home() {
   const paper = publications[0];
+  const teaching = [
+    { term: 'Spring 2026', code: 'EAS 5160 / 5170', course: 'Mathematical Foundations of Machine Learning', detail: 'Online' },
+    { term: 'Fall 2025', code: 'ESE 5300', course: 'Elements of Probability Theory', detail: 'Head TA' },
+    { term: 'Spring 2025', code: 'CIS 3200', course: 'Introduction to Algorithms', detail: 'Head of Homework Committee' },
+    { term: 'Spring & Fall 2024', code: 'CIS 1600', course: 'Discrete Math', detail: 'Head of Homework Committee' },
+  ];
 
   return (
     <div className="page-shell home-page">
@@ -11,6 +17,9 @@ export default function Home() {
         <div className="home-copy">
           <h1>William Guo</h1>
           <p className="home-role">Computer Science PhD student at UC San Diego</p>
+          <figure className="home-photo">
+            <img src={profile} alt="William Guo" />
+          </figure>
           <p>
             I am a first-year PhD student advised by{' '}
             <a href="https://barnasaha.net/" target="_blank" rel="noreferrer">Barna Saha</a>.
@@ -41,21 +50,19 @@ export default function Home() {
             <span className="placeholder-link" title="A current CV has not been supplied">CV [link needed]</span>
           </div>
         </div>
-        <figure className="home-photo">
-          <div className="photo-matte"><img src={profile} alt="William Guo" /></div>
-          <figcaption>William Guo</figcaption>
-        </figure>
       </section>
 
-      <section className="home-section" aria-labelledby="research-heading">
+      <section className="home-section" aria-labelledby="teaching-heading">
         <div className="section-heading">
-          <h2 id="research-heading">Research</h2>
-          <Link to="/research">Research and publications →</Link>
+          <h2 id="teaching-heading">Teaching</h2>
         </div>
-        <ul className="interest-list">
-          <li><strong>Randomized and approximation algorithms</strong><span>Provably efficient methods that use randomness or controlled approximation.</span></li>
-          <li><strong>Algorithms for large data</strong><span>Streaming and high-dimensional problems with limited time, memory, or access to the input.</span></li>
-          <li><strong>Stochastic processes</strong><span>Earlier work in online learning and sequential learning in networks.</span></li>
+        <ul className="teaching-list">
+          {teaching.map(({ term, code, course, detail }) => (
+            <li key={`${term}-${code}`}>
+              <time>{term}</time>
+              <div><strong>{code}: {course}</strong><span>{detail}</span></div>
+            </li>
+          ))}
         </ul>
       </section>
 

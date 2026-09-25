@@ -4,13 +4,11 @@ import './App.css';
 import RandomWalkBackground from './components/RandomWalkBackground';
 import Home from './pages/Home';
 import Research from './pages/Research';
-import Teaching from './pages/Teaching';
 import Projects from './pages/Projects';
 import PageNotFound from './components/PageNotFound';
 
 const navItems = [
   ['Research', '/research'],
-  ['Teaching', '/teaching'],
   ['Projects / Notes', '/projects'],
 ];
 
@@ -72,7 +70,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/research" element={<Research />} />
-          <Route path="/teaching" element={<Teaching />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>

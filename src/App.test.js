@@ -10,6 +10,9 @@ test('navigates between the primary research pages without an effect cleanup err
   const { unmount } = render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
 
   const navigation = screen.getByRole('navigation', { name: 'Primary navigation' });
+  expect(within(navigation).queryByRole('link', { name: 'Teaching' })).toBeNull();
+  expect(screen.getByRole('heading', { name: 'Teaching' })).not.toBeNull();
+  expect(screen.getByText(/EAS 5160 \/ 5170/)).not.toBeNull();
   fireEvent.click(within(navigation).getByRole('link', { name: 'Research' }));
   expect(screen.getByRole('heading', { name: 'Research', level: 1 })).not.toBeNull();
 
